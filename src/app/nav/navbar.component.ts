@@ -5,11 +5,14 @@ import { Component } from '@angular/core'
   templateUrl: './navbar.component.html',
   styles:[ `
   header#myHeader {
-    box-shadow: 1px -30px 35px 14px white;
+    box-shadow: 20px -30px 35px 15px grey;
     top: 0;
     width: 100%;
     z-index: 99999;
 
+ }
+ a{
+   color: black;
  }
  
  .img-fluid{
@@ -17,6 +20,11 @@ import { Component } from '@angular/core'
     margin-right: 5% !important;
  }
 
+ .flex{
+    margin: 10px 10px 0 10px;
+    display:flex;
+    align-items: center;
+}
  @media(min-wdith: 992px){
  .flex{
     flex-direction: row;
@@ -25,20 +33,16 @@ import { Component } from '@angular/core'
  }
 }
 
-.flex{
-    display:flex;
-    align-items: center;
-}
+  a.active{
+   color:  blue;
+  }
 
- .navbar-default{
+ a.nav-item{
+    margin-right: 100px;
     margin-left: 100px;
- }
-
- .nav-item{
-    margin-right: 150px;
     text-decoration: none;
     font-size:larger;
-    color: black;
+     
  }`]
 
 })

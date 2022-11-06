@@ -7,6 +7,7 @@ import { Component } from '@angular/core'
 
 .footer-img{
      margin-right: 5px;
+     margin-left: 10px;
    }
   
   .footer-default{
@@ -24,6 +25,7 @@ import { Component } from '@angular/core'
     text-decoration: none;
     font-size:medium;
  }
+
  `]
 
 })
