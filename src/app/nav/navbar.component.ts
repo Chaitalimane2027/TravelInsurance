@@ -38,8 +38,8 @@ import { Component } from '@angular/core'
   }
 
  a.nav-item{
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
     text-decoration: none;
     font-size:larger;
      

@@ -13,7 +13,8 @@ import { Component } from '@angular/core'
   .footer-default{
     background-color: grey;
     padding: 5px;
-    margin: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
     position: absolute;
     width: 95.3%;
     bottom: 0;

@@ -8,6 +8,9 @@ import { HomeDetailsComponent } from './home/home.component';
 import { SupportDetailsComponent } from './support/support.component';
 import { NavBarComponent } from './nav/navbar.component';
 import { FooterbarComponent } from './footer/footer.component';
+import { FaqDetailsComponent } from './faq/faq.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { appRoutes } from './routes'
 
 
@@ -15,6 +18,8 @@ import { appRoutes } from './routes'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatExpansionModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
   declarations: [
@@ -22,7 +27,8 @@ import { appRoutes } from './routes'
     HomeDetailsComponent,
     SupportDetailsComponent,
     FooterbarComponent,
-    NavBarComponent
+    NavBarComponent,
+    FaqDetailsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

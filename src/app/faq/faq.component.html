@@ -1,0 +1,14 @@
+<div class = "mat-accordion-top">
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let faq of faqs ; let i = index;" >
+      <mat-expansion-panel-header >
+        <mat-panel-title >
+          <b>{{ faq.question }}</b>
+        </mat-panel-title>    
+      </mat-expansion-panel-header>
+      {{faq.description}}
+    </mat-expansion-panel>
+    
+</mat-accordion> 
+</div>
+
