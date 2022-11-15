@@ -30,27 +30,27 @@
           <img class="location-img" src="../../assets/email.png" width="35px" height="35px" padding="10px">
           <div class="col-lg-10 col-md-10 col-sm-10 col-10">
             <h4>
-              TeamAvengerSupport@gmail.com
+              <a class="support-email" href="mailto:support@adotrip.com">TeamAvengerSupport@gmail.com</a>
             </h4>
           </div>
         </div>      
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-        <form action="contactform" name="contactform" id="contactform">
+         <form action="contactform" name="contactform" id="contactform">
           <div class="formgroup">
-            <input type="text" name="name" class="form-control" id="fullname"  placeholder=" Full Name" required="required">
+            <input type="text" name="name" class="form-control" placeholder=" Full Name" required id="name">
           </div>
           <div class="formgroup">
-            <input type="text" name="phone" class="form-control" id="phnumber"  placeholder=" Phone No." required="required">
+            <input type="text" name="phone" class="form-control" placeholder=" Phone No." required id="phone">
           </div>
           <div class="formgroup">
-            <input type="text" name="email" class="form-control" id="email"  placeholder=" Email Id" required="required">
+            <input type="text" name="email" class="form-control" placeholder=" Email Id" required id="email">
           </div>
           <div class="formgroup">
-            <textarea required name="msg" placeholder="Enter your comments here.."></textarea>
+            <textarea required id="msg" placeholder="Enter your comments here.."></textarea>
           </div>
           <div class="textcenter">
-            <input type="submit" name="submit" class="btn btn-primary mb-2 partner" id="submit" value=" Submit">
+            <button type="button" (click)="showMsg()" name="submit" class="submitbtn" id="submit" value="Submit"> Submit</button>
           </div>
 </form>
 
