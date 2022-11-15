@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormGroup, FormControl, Validators} from '@angular/forms';
 
 
 @Component({
@@ -39,7 +41,6 @@ import { Component } from '@angular/core';
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
     background-color: #fff;
     background-clip: padding-box;
     border: none;
@@ -52,14 +53,17 @@ import { Component } from '@angular/core';
 
    }
    
-  .btn:hover{
-    color: white;
-  }
-
+   a.support-email:hover{
+      color:blue;
+   }
+   .support-email{
+      text-decoration: none;
+      color: black;
+   }
    #submit{
       display: flex;
       flex-wrap: wrap;
-      width: 15.5%;
+      width: 15%;
       height: 45px;
       font-family: inherit;
       font-size: 1rem;
@@ -68,12 +72,14 @@ import { Component } from '@angular/core';
       padding: 10px 23px 10px 23px;
       margin: 15px 200px 15px 200px;
       cursor: pointer;
-      align-items: center;
       background-color: #0062cc;
       border-color: #005cbf;
+      transition: 0.3s;
    }
     
-
+   .submitbtn:hover{
+    color: white;
+  }
    @media (min-width: 992px){
    .col-lg-6 {
       
@@ -88,8 +94,31 @@ import { Component } from '@angular/core';
     max-width: 83.333333%;
 }
 
+   .alert-info {     
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    height: 35px;
+    margin: 15px 5px 15px 15px;
+    color: #0c5460;
+    background-color: #d1ecf1;
+    padding: 0.60rem 0.60rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+
 `]
 
 })
 export class SupportDetailsComponent {
-}
+
+
+   showMsg() {
+      alert("Thank you for contacting us! We will get back to you shortly.");
+    }
+
+    
+   }
