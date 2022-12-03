@@ -36,24 +36,24 @@
         </div>      
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-         <form action="contactform" name="contactform" id="contactform">
-          <div class="formgroup">
-            <input type="text" name="name" class="form-control" placeholder=" Full Name" required id="name">
-          </div>
-          <div class="formgroup">
-            <input type="text" name="phone" class="form-control" placeholder=" Phone No." required id="phone">
-          </div>
-          <div class="formgroup">
-            <input type="text" name="email" class="form-control" placeholder=" Email Id" required id="email">
-          </div>
-          <div class="formgroup">
-            <textarea required id="msg" placeholder="Enter your comments here.."></textarea>
-          </div>
-          <div class="textcenter">
-            <button type="button" (click)="showMsg()" name="submit" class="submitbtn" id="submit" value="Submit"> Submit</button>
-          </div>
-</form>
 
+         <form id="contactform" action="contactform" name="contactform" method="post">
+            <div class="formgroup">
+              <input type="text" name="name" class="form-control" placeholder=" Full Name" required id="name">
+            </div>
+            <div class="formgroup">
+              <input type="text" name="phone" class="form-control" placeholder=" Phone No." required id="phone">
+            </div>
+            <div class="formgroup">
+              <input type="text" name="email" class="form-control" placeholder=" Email Id" required id="email">
+            </div>
+            <div class="formgroup">
+              <textarea required id="msg" placeholder="Enter your comments here.."></textarea>
+            </div>
+          </form>
+            <div class="textcenter">
+              <button type="button" (click)="showMsg()" name="submit" class="submitbtn" id="submit" value="Submit"> Submit</button>
+            </div>
       </div>
     </div>
   </div>
