@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component,VERSION, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
+
 
 
 @Component({
@@ -15,6 +16,7 @@ import { FormGroup, FormControl, Validators} from '@angular/forms';
    }
    .support-content{
       display: flex;
+      padding-bottom: 75px;
   
    }
    .row{
@@ -113,12 +115,13 @@ import { FormGroup, FormControl, Validators} from '@angular/forms';
 `]
 
 })
-export class SupportDetailsComponent {
+export class SupportDetailsComponent { 
 
+   showMsg(){
+      alert('Thank you for contacting us. We will get back to you shortly!');
+      let form = document.getElementById('contactform')
+      if(form) (form as HTMLFormElement).reset();
+      //(<HTMLElement>document.getElementById('contactform') as HTMLFormElement).clear(); 
+     }
 
-   showMsg() {
-      alert("Thank you for contacting us! We will get back to you shortly.");
-    }
-
-    
-   }
+}
