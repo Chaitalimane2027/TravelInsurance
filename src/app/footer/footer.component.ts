@@ -9,19 +9,19 @@ import { Component } from '@angular/core'
      margin-right: 5px;
      margin-left: 10px;
    }
-  
-  .footer-default{
-    background-color: grey;
-    padding: 5px;
+ .footer-default{
+    background-color: #2a4c6d;
+    padding: 1px;
+    margin-top: 30px;
     margin-bottom: 0px;
     overflow: hidden;
-    position: relative;
-    width: 99.5%;
+    position: fixed;
+    width: 99.3%;
     bottom: 0;
    }
 
  .footer-item{
-    color: black;
+    color: white;
     margin-right: 100px;
     text-decoration: none;
     font-size:medium;
