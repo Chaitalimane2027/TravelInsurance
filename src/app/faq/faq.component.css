@@ -1,37 +1,50 @@
 .mat-expansion-panel-header{
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-size: 15px;
-    font-weight: 4;
-    opacity: 0.3;
-    color:#FF0220;
-    height:50px;
-    border-radius: 25px;
-   
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: 4;
+  opacity: 0.3;
+  color:#FF0220;
+  height:50px;
+  border-radius: 25px;
+ 
 }
-
+.mat-accordion .mat-expansion-panel:last-of-type {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-bottom: 10px;
+}
+.mat-accordion .mat-expansion-panel{
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-bottom: 10px;
+}
 
 .mat-expansion-panel{
-    width : 700px;
-    background-color: #FFFFFF;
-    color:#040CCB;
-    font-weight: bold;  
-    border: 1px solid #1C29C5; 
-    
+  width : 700px;
+  background-color: #FFFFFF;
+  color:#040CCB;
+  font-weight: bold;  
+  border: 1px solid #1C29C5; 
+  
 }
 .mat-accordion-top{
-    margin-top:50px;
-    margin-left: 60px;
+  margin-top:50px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+mat-expansion-panel{
+  margin: 10px;
 }
 mat-expansion-panel-header:hover {
-    cursor: pointer;
-    background: #9FA2E1 !important;
+  cursor: pointer;
+  background: #9FA2E1 !important;
 }
 .accordion-item-header,
-  .accordion-item-body ,.accordion-item-description {
-    color:#FF0220 !important;
-  }
-  .accordion-item {
-    display: block;
-    border: solid 1px rgb(150, 147, 147);
-  }
+.accordion-item-body ,.accordion-item-description {
+  color:#FF0220 !important;
+}
+.accordion-item {
+  display: block;
+  border: solid 1px rgb(150, 147, 147);
+}
 
