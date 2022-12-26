@@ -1,12 +1,12 @@
 .mat-expansion-panel-header{
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 15px;
-  font-weight: 4;
-  opacity: 0.3;
-  color:#FF0220;
-  height:50px;
-  border-radius: 25px;
- 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    font-weight: 4;
+    opacity: 0.3;
+    color:#FF0220;
+    height:50px;
+    border-radius: 25px;
+   
 }
 .mat-accordion .mat-expansion-panel:last-of-type {
   border-top-right-radius: 4px;
@@ -40,11 +40,11 @@ mat-expansion-panel-header:hover {
   background: #9FA2E1 !important;
 }
 .accordion-item-header,
-.accordion-item-body ,.accordion-item-description {
-  color:#FF0220 !important;
-}
-.accordion-item {
-  display: block;
-  border: solid 1px rgb(150, 147, 147);
-}
+  .accordion-item-body ,.accordion-item-description {
+    color:#FF0220 !important;
+  }
+  .accordion-item {
+    display: block;
+    border: solid 1px rgb(150, 147, 147);
+  }
 
