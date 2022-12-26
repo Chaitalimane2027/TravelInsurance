@@ -3,7 +3,7 @@
     <mat-expansion-panel class="mat-expansion-panel" *ngFor="let faq of faqs ; let i = index;" >
       <mat-expansion-panel-header >
         <mat-panel-title >
-          <b>{{ faq.question }}</b>
+          <p>{{ faq.question }}</p>
         </mat-panel-title>    
       </mat-expansion-panel-header>      
       {{faq.description}}

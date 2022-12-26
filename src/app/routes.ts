@@ -7,6 +7,7 @@ import { SupportDetailsComponent } from './support/support.component'
 
 export const appRoutes:Routes = [
   { path: 'home', component: HomeDetailsComponent},
+  { path: '', component: HomeDetailsComponent},
   { path: 'insurancecoverages', component: CoveragesDetailsComponent},
   { path: 'faqs', component: FaqDetailsComponent},
   { path: 'contactus', component: SupportDetailsComponent}

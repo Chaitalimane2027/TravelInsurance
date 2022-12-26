@@ -1,10 +1,9 @@
 .mat-expansion-panel-header{
     font-family: Roboto, "Helvetica Neue", sans-serif;
     font-size: 15px;
-    font-weight: 4;
-    opacity: 0.3;
-    color:#FF0220;
+    font-weight: 4;   
     height:50px;
+    color:#05a3d0;
     border-radius: 25px;
    
 }
@@ -20,11 +19,12 @@
 }
 
 .mat-expansion-panel{
-  width : 700px;
+  width : 1100px;
   background-color: #FFFFFF;
-  color:#040CCB;
-  font-weight: bold;  
-  border: 1px solid #1C29C5; 
+  color:#2a05d0;
+  
+   
+  border: 1px solid #04a1a4; 
   
 }
 .mat-accordion-top{
@@ -40,9 +40,7 @@ mat-expansion-panel-header:hover {
   background: #9FA2E1 !important;
 }
 .accordion-item-header,
-  .accordion-item-body ,.accordion-item-description {
-    color:#FF0220 !important;
-  }
+ 
   .accordion-item {
     display: block;
     border: solid 1px rgb(150, 147, 147);
